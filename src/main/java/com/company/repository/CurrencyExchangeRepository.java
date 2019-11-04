@@ -8,4 +8,5 @@ import com.company.model.ExchangeValue;
 @Repository
 public interface CurrencyExchangeRepository extends JpaRepository<ExchangeValue, Integer> {
 
+	public ExchangeValue findByFromAndTo(String from, String to);
 }
